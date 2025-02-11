@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0px;
     font-family: "Montserrat", serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -17,6 +18,32 @@ body {
     height: 100%;
 }
 
+main{
+    padding-top: 67px;
+    background: linear-gradient(to right, #000025, #111142, #000025);
+
+}
+
+.banner-front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.nome-banner{
+    font-weight: 700;
+    border-left: solid 5px;
+    font-size: 40px;
+    text-align: left;
+    color: aliceblue;
+}
+
+.img-banner {
+    display: flex;
+    right: 20px;
+    padding: 0;
+}
 
 .botao-topo-cv {
     width: 70px;
@@ -53,6 +80,7 @@ body {
 
 .headline {
     display: flex;
+    width: 100vw;
 
 
 }
@@ -91,18 +119,14 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 200px;
+
     align-items: center;
     font-size: 10px;
+    width: 100vw;
 
 }
 
-h1 {
-    border-left: solid 5px;
-    font-size: 40px;
-    text-align: left;
-    color: aliceblue;
-}
+
 
 h2 {
     color: #fff;
@@ -143,6 +167,8 @@ footer {
     border-color: black;
     background-color: rgb(0, 4, 50);
     border-radius: 45px;
+    position: fixed;
+    width: 1000px;
 }
 
 .menu-link {
@@ -305,7 +331,7 @@ h3 {
     background-color: darkgreen;
     color: #fff;
     padding: 5px 20px;
-    margin: 50px 0px;
+    margin: 0px 0px 50px 0px;
     text-align: center;
     border-radius: 20px;
     font-weight: 700;
@@ -383,6 +409,12 @@ h3 {
     border-radius: 20px;
     border-color: rgb(255, 255, 255);
 }
+
+
+
+
+
+
 
 @media screen and (max-width: 1000px) {
 
