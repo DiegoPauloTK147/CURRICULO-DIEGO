@@ -39,11 +39,7 @@ main{
     color: aliceblue;
 }
 
-.img-banner {
-    display: flex;
-    right: 20px;
-    padding: 0;
-}
+
 
 .botao-topo-cv {
     width: 70px;
@@ -51,7 +47,6 @@ main{
     position: absolute;
     top: 20px;
     right: 20px;
-
 }
 
 
@@ -85,8 +80,6 @@ main{
 .headline {
     display: flex;
     width: 100vw;
-
-
 }
 
 .botao-ling:hover {
@@ -108,7 +101,6 @@ main{
 }
 
 .mide {
-    
     background-color: rgb(4, 4, 120, 0.8);
     height: 100vh;
     width: 1000px;
@@ -123,7 +115,6 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
     align-items: center;
     font-size: 10px;
     width: 100vw;
@@ -152,7 +143,7 @@ footer {
     color: #fff;
     text-align: center;
     width: 1000px;
-    }
+}
 .texto-footer {
     padding: 20px;
 }
@@ -171,7 +162,6 @@ footer {
     border-color: black;
     background-color: rgb(0, 4, 50);
     border-radius: 45px;
-
     width: 1000px;
 }
 
@@ -230,12 +220,6 @@ footer {
 
 .name-central {
     margin: 0px 20px 0 20px;
-}
-
-.flag {
-    margin: 0px 35px;
-    height: 70px;
-    float: left;
 }
 
 .sobre-mim {
@@ -508,185 +492,198 @@ button:hover {
 }
 
 
-@media screen and (max-width: 1000px) {
-
+@media screen and (max-width: 700px) {
     * {
-        padding: 0px;
+        padding: 0;
         margin: 0px;
-        display: flex;
-        flex-direction: column;
+        font-family: "Montserrat", serif;
+        box-sizing: border-box;
     }
 
     body {
-        width: 430px;
-        padding: 0px;
-        margin: 0px;
         display: flex;
         justify-content: center;
+        background-image: url(IMG/backtorino.jpg);
         background-color: blue;
         background-size: cover;
-        background-image: none;
+        background-position: center;
+        background-attachment: fixed;
         height: 100%;
+        }
 
+    main{
+        padding-top: 67px;
+        background: linear-gradient(to right, #000025, #111142, #000025);
     }
-    
-    header {
-        font-size: 12px;
-    }
-    h1 {
-        font-size: 22px;
-    }
-
-    h2 {
-        width: 400px;
-        padding: 5pxpx 10px;
-        margin: 5px 10px;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .foto-tx {
-        display: flex;
-        flex-direction: row;
+    .banner-front {
+        display: grid;
+        align-items: center;
         justify-content: center;
-        padding: 50px 0px;
+        text-align: center;
+        color: white;
     }
-
-    .paragrafo-sobre-mim{
-        margin: 0px;
-        padding: 0px;
+    .nome-banner{
+        font-weight: 100vw;
+        border-left: solid 5px;
+        font-size: 40px;
+        text-align: left;
+        color: aliceblue;
     }
-
-    .fotinea {
-        padding: 0px;
-        margin: 0px;
-        height: 100px;
-        width: 100px;
+    .botao-topo-cv {
+        display: flex;
+        width: 70px;
+        height: 70px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
     }
-
+    .banners {
+        width: 100vw;
+    }
     .mid {
-        width: 430px;
-        font-size: 12px;
+        background-color: rgb(4, 4, 120, 0.8);
+        height: 100%;
+        width: 100vw;
     }
+    .mide {
+        background-color: rgb(4, 4, 120, 0.8);
+        height: 100vh;
+        width: 100vw;
 
-    .manu {
-        border-radius: 2px;
-    }
-
-    .flag {
-        display: none;
-    }
-    .sobre-mim {
-        font-size: 12px;
     }
 
     .diego-front {
-        height: 200px;
+        height: 100px;
     }
-
-    .containercurriculo {
+    header {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-size: 10px;
+        width: 100vw;
     
     }
-    
-    .botão-curriculo {
-        width: 350px;
-        background-color: darkgreen;
+    h2 {
         color: #fff;
-        padding: 0px 20px;
-        margin: 20px 0px;
+        margin: 5px 30px;
+    
+    }
+    
+    h4 {
+        margin-bottom: 20px;
+    }
+    footer {
+        height: 70px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #000c58;
+        color: #fff;
         text-align: center;
-        border-radius: 20px;
-        font-weight: 700;
-        text-decoration: none;
-        text-transform: uppercase;
+        width: 100vw;
     }
-
-    .botao-volta {
-        width: 380px;
-        text-align: center;
-
-    }
-
-    .botao-volta:hover {
-        width: 380px;
-        text-align: center;
-      
-    }
-
-    .botaoredes{
-        width: 35px;
-        padding: 0 5px;
-    }
-
-    .botoesredes {
+    .menu {
         display: flex;
-        flex-direction: row;
-        position: fixed;
-        bottom: 120px;
-        z-index: 1000;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         text-align: center;
-    
+        font-family: "Montserrat", serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-top: 0px;
+        color: aliceblue;
+        border-top: solid 5px;
+        border-color: black;
+        background-color: rgb(0, 4, 50);
+        border-radius: 45px;
+        width: 100vw;
+    }
+    .menu-link {
+        padding: 10px 15px;
+        background-color: green;
+        margin: 10px 10px;
+        border-radius: 20px;
+        width: 98vw;
+        text-decoration: none;
+        color: #fff
     }
 
-    .porti {
-        display: grid;
-        grid-template-columns: 80px 80px 80px 80px;
-        padding: 0px;
+    .botao-contato {
+        margin: 0px;
+        padding: 5px 15px;
+        font-family: "Montserrat", serif;
+        font-weight: 600;
+        font-size: larger;
+        text-transform: uppercase;
+        margin-top: 0px;
+        padding: 10px 30px;
+        color: aliceblue;
+        border-radius: 15px;
+        border: none;
     }
     .container-contato {
-        padding: 0px;
-        width: 430px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
-
     .container-contato-inside {
-        margin: 0px;
-        padding: 0;
-        height: 150px;
+        width: 98vw;
+        margin: 20px;
+        color: #fff;
+        height: 100px;
     }
 
     .botao-contato-body {
-        margin-top: 20px;
+        background-color: darkgreen;
+        padding: 12px 15px;
+        margin-top: 10px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 900;
+        border: solid 1px;
+        border-radius: 20px;
+        border-color: gray;
+        width: 98vw;
     }
 
-    footer {
-        width: 430px;
-        padding: 0px;
-        margin: 0px;
-        height: 250px;
-    }
-
-    box-text {
+    .box-text {
         display: flex;
+        flex-direction: column;
         padding: 0px;
         margin: 0px;
     }
-    
-    .box-inside {
-        width: 300 px;
-        border: solid 4px;
-        border-color: #000000;
-        padding: 10px 0px;
-        font-size: 14px;
-        background-color: #000c58;
+    h3 {
+        color: #ffffff;
+        padding: 5px;
     }
     
-    .box-inside1-2 {
-        margin-right: 10px 0px;
+    .botao-ling {
+        text-decoration: none;
+        padding: 10px 30px;
+        background-color: green;
+        width: 95vw;
+        text-align: center;
+        margin: 10px;
+        color: #fff;
+        border-radius: 20px;
+        font-weight: 500;
+        font-size: 20px;
     }
-    .banners {
-        width: 430px;
+    .body-index {
+        width: 100vw;
+        height: 100vw;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
     }
-    title{
-        display: none;
-    }
-    .botao-topo-cv {
-display: none;
+    .index-button {
+        display: grid;
+        padding-top: 200px ;
+        margin-top: 0px;
+        left: 2px;
     }
 }
