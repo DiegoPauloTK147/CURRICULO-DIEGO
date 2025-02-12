@@ -10,7 +10,7 @@
 body {
     display: flex;
     justify-content: center;
-    background-image: url(IMG/backtorino.jpg);
+    background-image: url(IMG/backtimes.png);
     background-color: blue;
     background-size: cover;
     background-position: center;
@@ -491,6 +491,9 @@ button:hover {
     scroll-margin-top: 85px;
 }
 
+.mobile-interact {
+    display: none;
+}
 
 @media screen and (max-width: 700px) {
     * {
@@ -685,5 +688,79 @@ button:hover {
         padding-top: 200px ;
         margin-top: 0px;
         left: 2px;
+    }
+    .botao-topo-cv{
+        display: none;
+    }
+    .mobile-interact {
+        display: flex;
+        width: 100vw;
+        height: 140px;
+        background-color: #000000;
+        position: fixed;
+        bottom: 0px;
+        margin: 0 auto;
+    }
+
+    .mobile-interact-redes {
+        display: flex;
+        width: 100vw;
+        height: 70px;
+        background-color: #000000;
+        position: fixed;
+        bottom: 0px;
+        margin: 0 auto;
+        color: white;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .mobile-interact-linkedin {
+        background-color: blue;
+        width: 34vw;
+        height: 70px;
+        color: white;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .mobile-interact-whatsapp {
+        background-color: rgb(38, 255, 0);
+        width: 32vw;
+        height: 70px;
+        color: white;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .mobile-interact-instagram {
+        background-color: rgb(160, 2, 123);
+        width: 34vw;
+        height: 70px;
+        color: white;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    footer{
+        padding-bottom: 250px;
+    }
+
+    .botaoredes {
+       display: none;
+    }
+    .botao-volta {
+        display: none;
+    }
+    .agenda {
+        background-color: red;
+        width: 100vw;
+        height: 70px;
+        color: white;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
     }
 }
