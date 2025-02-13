@@ -316,7 +316,7 @@ h3 {
 
 .botão-curriculo {
     width: 900px;
-    background-color: darkgreen;
+    background-color: #b80000;
     color: #fff;
     padding: 5px 20px;
     margin: 0px 0px 50px 0px;
@@ -512,6 +512,7 @@ button:hover {
         background-position: center;
         background-attachment: fixed;
         height: 100%;
+        text-decoration: none;
         }
 
     main{
@@ -577,7 +578,7 @@ button:hover {
         margin-bottom: 20px;
     }
     footer {
-        height: 70px;
+        height: 40px;
         bottom: 0;
         left: 0;
         width: 100%;
@@ -695,11 +696,13 @@ button:hover {
     .mobile-interact {
         display: flex;
         width: 100vw;
-        height: 140px;
+        height: 130px;
         background-color: #000000;
         position: fixed;
         bottom: 0px;
         margin: 0 auto;
+        text-decoration: none;
+
     }
 
     .mobile-interact-redes {
@@ -714,34 +717,44 @@ button:hover {
         align-items: center;
         text-align: center;
         justify-content: center;
+        text-decoration: none;
     }
 
     .mobile-interact-linkedin {
         background-color: blue;
         width: 34vw;
-        height: 70px;
+        height: 60px;
         color: white;
         align-items: center;
         text-align: center;
         justify-content: center;
+        padding-top: 22px;
+        font-weight: 700;
+        text-decoration: none;
     }
     .mobile-interact-whatsapp {
-        background-color: rgb(38, 255, 0);
+        background-color: rgb(22, 116, 5);
         width: 32vw;
-        height: 70px;
+        height: 60px;
         color: white;
         align-items: center;
         text-align: center;
         justify-content: center;
-    }
+        padding-top: 22px;
+        font-weight: 700;
+        text-decoration: none;
+}
     .mobile-interact-instagram {
         background-color: rgb(160, 2, 123);
         width: 34vw;
-        height: 70px;
+        height: 60px;
         color: white;
         align-items: center;
         text-align: center;
         justify-content: center;
+        padding-top: 22px;
+        font-weight: 700;
+        text-decoration: none;
     }
 
     footer{
@@ -755,12 +768,49 @@ button:hover {
         display: none;
     }
     .agenda {
-        background-color: red;
+        background-color: #b80000;
         width: 100vw;
-        height: 70px;
+        height: 60px;
         color: white;
         align-items: center;
         text-align: center;
         justify-content: center;
+        padding-top: 22px;
+        font-weight: 700;
+    }
+
+
+    .carousel-container {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        max-width: 1000px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        background: white;
+    }
+    
+    .carousel {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .carousel img {
+        width: 35%;
+        object-fit: contain;
+        padding: 10px;
+    }
+    
+    button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 20px;
     }
 }
