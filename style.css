@@ -777,6 +777,7 @@ button:hover {
         justify-content: center;
         padding-top: 22px;
         font-weight: 700;
+        text-decoration: none;
     }
 
 
@@ -813,4 +814,8 @@ button:hover {
         cursor: pointer;
         font-size: 20px;
     }
+    a {
+        color: white;
+        text-decoration: none;
+      }
 }
