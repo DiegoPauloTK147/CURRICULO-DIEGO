@@ -10,12 +10,10 @@
 body {
     display: flex;
     justify-content: center;
-    background-image: url(IMG/backtimes.png);
-    background-color: blue;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('IMG/backtimes.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 100%;
 }
 
 main {
@@ -164,12 +162,15 @@ footer {
     margin: 10px 10px;
     border-radius: 20px;
     width: 200px;
+    transition: background-color 0.5s ease, transform 0.5s ease;
     text-decoration: none;
     color: #fff
 }
 
 .menu-link:hover {
-    transform: scale(1.15);
+    color: white;
+    background-color: #b80000;
+    transform: scale(1.1);
 }
 
 .botao-contato {
@@ -267,6 +268,7 @@ h3 {
     bottom: 40px;
     right: 40px;
     z-index: 1000;
+    transition: background-color 0.5s ease, transform 0.5s ease;
     color: #fff;
     background-color: green;
     padding: 20px;
@@ -276,7 +278,8 @@ h3 {
 }
 
 .botao-volta:hover {
-    transform: scale(1.15);
+    background-color: #b80000;
+    transform: scale(1.1);
 }
 
 .paragrafo-sobre-mim2 {
@@ -294,6 +297,7 @@ h3 {
 .botão-curriculo {
     width: 900px;
     background-color: #b80000;
+    transition: background-color 0.5s ease, transform 0.5s ease;
     color: #fff;
     padding: 5px 20px;
     margin: 0px 0px 50px 0px;
@@ -302,20 +306,22 @@ h3 {
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
+
 }
 
 
 .botão-curriculo:hover {
-    transform: scale(1.10);
+    transform: scale(1.1);
 }
 
 .botaoredes {
     width: 50px;
     padding: 0 5px;
+    transition: background-color 0.5s ease, transform 0.5s ease;
 }
 
 .botaoredes:hover {
-    transform: scale(1.20);
+    transform: scale(1.4);
 }
 
 .botoesredes {
@@ -426,8 +432,8 @@ button:hover {
 .popup {
     display: none;
     position: fixed;
-    width: 700px;
-    height: 700px;
+    width: 500px;
+    height: 500px;
     background: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     top: 50%;
@@ -463,6 +469,22 @@ button:hover {
 .mobile-interact {
     display: none;
 }
+
+.language-links {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+
+    gap: 10px;
+}
+.language-links a img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+        transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
 
 @media screen and (max-width: 700px) {
     * {
@@ -811,3 +833,4 @@ button:hover {
         text-decoration: none;
     }
 }
+
